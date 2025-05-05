@@ -13,7 +13,7 @@ const badgeAwardRoutes = require("./routes/badgeAwardRoutes");
 const eventRoutes = require("./routes/eventRoutes");
 const sessionRoutes = require("./routes/sessionRoutes");
 const reportRoutes = require("./routes/reportRoutes");
-const importRoutes = require("./routes/importRoutes");
+// const importRoutes = require("./routes/importRoutes");
 const errorMiddleware = require("./middleware/errorMiddleware");
 const cors = require("cors");
 const bodyParser = require("body-parser");
@@ -37,7 +37,7 @@ app.use("/api/badge-awards", badgeAwardRoutes);
 app.use("/api/events", eventRoutes);
 app.use("/api/sessions", sessionRoutes);
 app.use("/api/reports", reportRoutes);
-app.use("/api/import", importRoutes);
+// app.use("/api/import", importRoutes);
 app.use("/api/dashboard", require("./routes/dashboard"));
 app.use("/api/attendance", require("./routes/attendanceRoutes"));
 // Error Middleware
